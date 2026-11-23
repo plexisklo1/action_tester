@@ -1,0 +1,10 @@
+name: first_workflow
+on: workflow_dispatch  #waits for user to manually start the workflow
+jobs:
+  first_job:
+    runs-on: ubuntu-latest  #runner specification
+    steps:
+      - name: print greeting
+        run: echo "first_workflow, printing greeting"
+      - name: print bye
+        run: echo "I'm done"
