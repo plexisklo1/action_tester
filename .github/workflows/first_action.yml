@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest  #runner specification
     steps:
       - name: print greeting
-        run: echo "first_workflow, printing greeting"
+        run: |
+          echo "first_workflow, printing greeting"
+          echo "not like this D:"
       - name: print bye
         run: echo "I'm done"
